@@ -1,0 +1,32 @@
+//@import url('https://fonts.googleapis.com/css2? family= Nabla & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+$font-1 : 'Kanit', sans-serif;
+
+.App-header {
+
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    text-align: left;
+    background: linear-gradient(white 50%, #20276D);
+}
+
+h1.ui.black.header {
+    font-size: 2em;
+    font-family: $font-1;
+    font-style: italic;
+    text-decoration-style: double;
+}
+
+@media (min-width: 800px) {
+    .App-header {
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+        padding-left: 2rem;
+    }
+    
+    h1.ui.black.header {
+        font-size: 4em;
+    }
+}

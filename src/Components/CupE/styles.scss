@@ -1,0 +1,75 @@
+.bracket{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: flex-start;
+    padding: 4rem;
+    width: 100%;
+}
+
+.seedBox {
+    display: flex;
+    justify-content: space-between;
+    width:10%;
+}
+
+.sc-bczRLJ.dFZFfK {
+    width: 100%;
+}
+
+.imgLogo {
+    width: 35px;
+    height: 35px;
+    margin-right: 1rem;
+}
+
+.seedBoxScore {
+    //flex-direction: column;
+    //align-content: center;
+    //align-self: auto;
+}
+
+.seedBoxScoreItem {
+    height: 50%;
+}
+
+@media (min-width: 800px) {
+    .seedBox {
+        display: flex;
+        justify-content: space-between;
+        //align-items: baseline;
+    }
+    
+    .imgLogo {
+        width: 35px;
+        height: 35px;
+        margin-right: 1rem;
+    }
+    
+    .seedBoxScore {
+        //flex-direction: column;
+        //align-content: center;
+        //align-self: auto;
+    }
+    
+    .seedBoxScoreItem {
+        height: 50%;
+    }
+    
+    .bracket{
+        height: 100vh;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        padding: 8rem;
+    }
+
+    .sc-bczRLJ.dFZFfK {
+        width: 100%;
+    }
+     
+}
+
+
+

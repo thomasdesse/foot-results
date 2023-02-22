@@ -1,0 +1,52 @@
+.menu-st-2 {
+    display: none;
+}
+
+
+.nav-media2 {
+    display: flex;
+    justify-content: center;
+}
+
+.ui.menu {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+}
+
+.menu2.ui.menu .dropdown.item .menu {
+    height: fit-content;
+    overflow: hidden;
+}
+
+.ui.dropdown .menu>.item {
+    padding: 0;
+}
+
+#item {
+    padding: 0 !important;
+}
+
+@media (min-width: 800px) {
+
+    .ui.menu {
+        display: none;
+    }
+
+    .menu-st-2 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 1rem 1rem 1rem;
+    }
+    
+    .ui.fluid.button-st2 {
+        margin-right: 3rem;
+        border-radius: 20px;
+    }
+    
+    a.menu-st-2-link{
+        margin: 0.5rem;
+        background-color: white;
+        border-radius: 20px;
+    }
+}

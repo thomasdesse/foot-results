@@ -1,0 +1,52 @@
+.menu-st-1 {
+    display: none;
+}
+
+
+.nav-media {
+    display: flex;
+    justify-content: center;
+}
+
+.ui.menu {
+    width: fit-content;
+    height: fit-content;
+    margin: 0;
+}
+
+.ui.menu .dropdown.item .menu {
+    height: 50vh;
+    overflow: scroll;
+}
+
+.ui.dropdown .menu>.item {
+    padding: 0;
+}
+
+#item {
+    padding: 0 !important;
+}
+
+@media (min-width: 800px) {
+
+    .ui.menu {
+        display: none;
+    }
+
+    .menu-st-1 {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 1rem 1rem 1rem;
+    }
+    
+    .ui.inverted.green.button {
+        margin-right: 3rem;
+        border-radius: 20px;
+    }
+    
+    a.menu-st-1-link{
+        margin: 0.5rem;
+        background-color: white;
+        border-radius: 20px;
+    }
+}

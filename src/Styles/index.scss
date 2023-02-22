@@ -1,0 +1,22 @@
+@use 'reset';
+@use 'vars';
+
+
+body {
+  background-color: vars.$colorAlt;
+  // background-image: linear-gradient(to Bottom, #123456, #{color.scale(#123456, $lightness: 20%)});
+  color: vars.$colorMain;
+  @include vars.baseFont; // je récupère les propriétés de mon mixin
+}
+
+/* 
+  // or you can import your own font
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+*/

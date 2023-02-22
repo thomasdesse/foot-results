@@ -1,0 +1,13 @@
+td.center.aligned.table-cellResult {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+@media (min-width: 800px) {
+
+    td.center.aligned.table-cellResult {
+        text-align: center;
+    }
+
+}
+

@@ -1,0 +1,21 @@
+@use 'sass:color';
+
+// avec une variable je mémorise une valeur
+$colorMain: #20276D;
+$colorAlt: color.scale($colorMain, $lightness: 70%);
+$colorLight: #fff;
+
+$weightLight: 300;
+$weightMedium: 500;
+$weightBold: 700;
+
+$speedSlow: 1s;
+$speedFast: 0.2s;
+
+// avec mixin je mémorise des propriétés
+// https://sass-lang.com/documentation/at-rules/mixin
+// avevc @mixin je définis quelque chose
+@mixin baseFont {
+  font-family: Spartan, sans-serif;
+  font-weight: $weightLight;
+}

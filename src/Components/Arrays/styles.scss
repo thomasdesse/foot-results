@@ -1,0 +1,99 @@
+@use 'src/Styles/vars';
+
+.results {
+    font-size: large;
+
+    &-title {
+        color: red;
+        font-size: 2rem;
+    }
+}
+
+.results-round { 
+    background-color: vars.$colorMain;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    text-align: start;
+    padding: 10px;
+}
+
+.results-ranking {
+    background-color: vars.$colorMain;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    text-align: start;
+    padding: 10px;
+}
+
+td img.ui.image {
+    display: inline-flex;
+    padding-right: 1em;
+}
+
+.rowTop {
+    background-color: rgba(71, 160, 71, 0.5);
+}
+
+.rowBottom {
+    background-color: rgba(235, 18, 11, 0.5);
+}
+
+/*table.ui.celled.single.line.table.tableRank th {
+    display: flex;
+}*/
+
+
+
+@media (min-width: 800px) {
+    .results {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: small;
+    
+        &-title {
+            color: red;
+            font-size: 2rem;
+        }
+    }
+    
+    .results-round { 
+        background-color: vars.$colorMain;
+        padding-top: 2rem;
+        margin: 4rem;
+        width: 30%;
+        border-radius: 5px;
+        text-align: start;
+        padding: 10px;
+    }
+    
+    .results-ranking {
+        background-color: vars.$colorMain;
+        padding-top: 2rem;
+        margin: 4rem;
+        width: 30%;
+        border-radius: 5px;
+        text-align: start;
+        padding: 10px;
+    }
+    
+    td img.ui.image {
+        display: inline-flex;
+        padding-right: 1em;
+    }
+    
+    .rowTop {
+        background-color: rgba(71, 160, 71, 0.5);
+    }
+    
+    .rowBottom {
+        background-color: rgba(235, 18, 11, 0.5);
+    }
+}
+
+
+
