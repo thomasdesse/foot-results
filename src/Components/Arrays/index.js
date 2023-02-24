@@ -39,41 +39,31 @@ const Arrays = () => {
                         </Table>
                     </div>
 
-                <div className="results-ranking"><div className="results-title">Classement</div>
-                <Table celled fixed singleLine unstackable className="tableRank">
-                    <Table.Header>
-                        <Table.Row>
-                            <Table.HeaderCell>position</Table.HeaderCell>
-                            <Table.HeaderCell>Equipe</Table.HeaderCell>
-                            <Table.HeaderCell>Points</Table.HeaderCell>
-                            <Table.HeaderCell>journée</Table.HeaderCell>
-                        </Table.Row>
-                        </Table.Header>
-        
-                    {standing.map((currentStanding) => (
-                        <Ranking
-                        key={currentStanding.team_id}
-                        position={currentStanding.position}
-                        teamName={currentStanding.team_name}
-                        teamLogo={currentStanding.team_logo}
-                        points={currentStanding.points}
-                        round={round}
-                        />
-                    ))
-                    
-                    /*standing.map((currentStanding) => (
-                        <Ranking
-                        key={currentStanding.team_id}
-                        position={currentStanding.position}
-                        teamName={currentStanding.team_name}
-                        teamLogo={currentStanding.team_logo}
-                        points={currentStanding.points}
-                        round={round}
-                        />
-                    ))*/} 
-                </Table>          
+                    <div className="results-ranking"><div className="results-title">Classement</div>
+                        <Table celled fixed singleLine unstackable className="tableRank">
+                        <Table.Header>
+                            <Table.Row>
+                                <Table.HeaderCell>position</Table.HeaderCell>
+                                <Table.HeaderCell className ="thEquipe">Equipe</Table.HeaderCell>
+                                <Table.HeaderCell>Points</Table.HeaderCell>
+                                <Table.HeaderCell>journée</Table.HeaderCell>
+                            </Table.Row>
+                            </Table.Header>
+            
+                        {standing.map((currentStanding) => (
+                            <Ranking
+                            key={currentStanding.team_id}
+                            position={currentStanding.position}
+                            teamName={currentStanding.team_name}
+                            teamLogo={currentStanding.team_logo}
+                            points={currentStanding.points}
+                            round={round}
+                            />
+                        ))
+                        } 
+                        </Table>          
+                    </div>
                 </div>
-            </div>
             </div>
             
             )

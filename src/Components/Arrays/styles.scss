@@ -1,7 +1,7 @@
 @use 'src/Styles/vars';
 
 .results {
-    font-size: large;
+    font-size: small;
 
     &-title {
         color: red;
@@ -29,6 +29,10 @@
     padding: 10px;
 }
 
+.thEquipe {
+    width: 12rem;
+}
+
 td img.ui.image {
     display: inline-flex;
     padding-right: 1em;
@@ -41,11 +45,6 @@ td img.ui.image {
 .rowBottom {
     background-color: rgba(235, 18, 11, 0.5);
 }
-
-/*table.ui.celled.single.line.table.tableRank th {
-    display: flex;
-}*/
-
 
 
 @media (min-width: 800px) {

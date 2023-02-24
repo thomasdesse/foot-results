@@ -1,22 +1,19 @@
 export const initialState ={
-    menu: false,
-    footer: true,
+    footer: false,
 };
 
-const burgerReducer = (state = initialState, action = {}) => {
+const footerReducer = (state = initialState, action = {}) => {
     switch (action.type) {
         case 'TOGGLE_MENU':
             return {
             ...state,
-            menu: !state.menu,
-            footer: !state.footer
+            footer: !state.menu
         };
 
         case 'CLOSE_MENU':
             return {
             ...state,
-            menu: false,
-            footer: true
+            footer: false
         };
 
         default:
@@ -24,4 +21,4 @@ const burgerReducer = (state = initialState, action = {}) => {
   }
 }
 
-export default burgerReducer;
+export default footerReducer;

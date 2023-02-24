@@ -1,9 +1,8 @@
 import { useSelector } from 'react-redux';
-
 import { Table } from 'semantic-ui-react'
-
 import ArrayResults from './ArrayResultsP2';
 import Ranking from './ArrayRankingP2';
+import PopupInfo from '../Popup';
 
 import './styles.scss';
 
@@ -15,6 +14,7 @@ const ArraysP2 = () => {
 
         return (
             <div>
+                <PopupInfo />
                 <div className= "results">
                     <div className="results-round"><div className="results-title">Résultats</div>
                         <Table celled fixed singleLine>
@@ -42,7 +42,7 @@ const ArraysP2 = () => {
                             <Table.Header>
                                 <Table.Row>
                                     <Table.HeaderCell>position</Table.HeaderCell>
-                                    <Table.HeaderCell>Equipe</Table.HeaderCell>
+                                    <Table.HeaderCell className ="thEquipe">Equipe</Table.HeaderCell>
                                     <Table.HeaderCell>Points</Table.HeaderCell>
                                     <Table.HeaderCell>journée</Table.HeaderCell>
                                 </Table.Row>
@@ -87,7 +87,7 @@ const ArraysP2 = () => {
                             <Table.Header>
                                 <Table.Row>
                                     <Table.HeaderCell>position</Table.HeaderCell>
-                                    <Table.HeaderCell>Equipe</Table.HeaderCell>
+                                    <Table.HeaderCell className ="thEquipe">Equipe</Table.HeaderCell>
                                     <Table.HeaderCell>Points</Table.HeaderCell>
                                     <Table.HeaderCell>journée</Table.HeaderCell>
                                 </Table.Row>

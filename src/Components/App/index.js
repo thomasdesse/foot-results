@@ -32,11 +32,12 @@ function App() {
   }, []);
 
   const hideContent = useSelector ((state) => state.burger.menu);
-  
+  const hideContentFooter = useSelector ((state) => state.burger.footer);
+  console.log(hideContentFooter);
   return (
     <div className="App">
         <HeaderPage
-          title = "Scottish Premier ship Results"
+          title = "Foot Results"
         />
         <NavHeader className="navHeader" />
           <div className={`App-content ${hideContent ? "hiden-content" : "show-content"}`}>
@@ -51,8 +52,10 @@ function App() {
                      return null;
                   }} />
               </Routes>            
-          </div>                             
-        <Footer contacts = 'contacts'/>        
+          </div> 
+        <div className={`Footer-content ${hideContentFooter ? "show-contentFooter" : "hiden-contentFooter" }`}>
+          <Footer contacts = 'contacts'/>        
+        </div>                            
     </div>
   );
 }
